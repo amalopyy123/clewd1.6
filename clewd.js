@@ -165,7 +165,7 @@ const Proxy = Server(((req, res) => {
     if ('/v1/complete' !== req.url) {
         return res.json({
             'error': {
-                'message': '404 Not Found',
+                'message': '404 Not Found:'+req.url,
                 'type': 404,
                 'param': null,
                 'code': 404
